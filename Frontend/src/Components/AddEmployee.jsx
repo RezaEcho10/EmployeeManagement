@@ -18,6 +18,8 @@ function AddEmployee() {
 		formData.append("name" , data.name)
 		formData.append("email", data.email)
 		formData.append('password' , data.password)
+		formData.append('address', data.address)
+		formData.append('salary', data.salary)
 		formData.append('image' , data.image)
 		axios.post('http://localhost:8080/create' , formData)
 		.then(res => console.log(res))
